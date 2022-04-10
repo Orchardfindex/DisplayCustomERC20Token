@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { injected } from "./connectors";
 import Button from "@mui/material/Button";
@@ -9,9 +9,15 @@ const ConnectWallet = () => {
   const { active, account, chainId, activate, deactivate } = useWeb3React();
   const [errorMessage, setErrorMsg] = useState("");
 
+  useEffect(() => {
+    const provider = window.localStorage.getItem("provider");
+    if (provider) activate(injected);
+  }, []);
+
   const connectWalletHandler = async () => {
     try {
       await activate(injected);
+      window.localStorage.setItem("provider", "injected");
     } catch (error) {
       console.log("I am", error);
       if (error.code === 4001) setErrorMsg("User rejected the request");
@@ -53,8 +59,8 @@ const ConnectWallet = () => {
           <h3>Not Connected</h3>
         )}
       </div>
-      <div>{active ? <h3>Network ID: {chainId}</h3> : <></>}</div>
-      <div>{active ? <DisplayTokenBalance /> : <></>}</div>
+      <div>{active && <h3>Network ID: {chainId}</h3>}</div>
+      <div>{active && <DisplayTokenBalance />}</div>
     </div>
   );
 };

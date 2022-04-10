@@ -7,6 +7,7 @@ import ConnectWallet from "./ConnectWallet";
 function getLibrary(provider) {
   return new ethers.providers.Web3Provider(provider);
 }
+
 function App() {
   return (
     <div className="App">
