@@ -5,6 +5,8 @@ require("dotenv").config();
 const ALCHEMY_API = process.env.ALCHEMY_HTTP;
 const SECRET = process.env.SECRET;
 const ETHERSCAN_API = process.env.ETHERSCAN_API;
+const POLYGONSCANSCAN_API = process.env.POLYGONSCAN_API;
+const ALCHEMY_HTTP_MUMBAI = process.env.ALCHEMY_HTTP_MUMBAI;
 
 module.exports = {
   solidity: "0.8.4",
@@ -13,8 +15,13 @@ module.exports = {
       url: `${ALCHEMY_API}`,
       accounts: [`0x${SECRET}`],
     },
+    mumbai: {
+      url: `${ALCHEMY_HTTP_MUMBAI}`,
+      accounts: [`0x${SECRET}`],
+    },
   },
   etherscan: {
-    apiKey: `${ETHERSCAN_API}`,
+    // apiKey: `${ETHERSCAN_API}`,
+    apiKey: `${POLYGONSCANSCAN_API}`,
   },
 };

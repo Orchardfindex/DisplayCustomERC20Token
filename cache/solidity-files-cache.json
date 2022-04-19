@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\ACER\\Desktop\\Project\\SimpleWeb3\\nus-money\\contracts\\SuperToken.sol": {
-      "lastModificationDate": 1649411314074,
-      "contentHash": "bea4a657cc40a8bcd33d0bae6f8fe9c8",
+      "lastModificationDate": 1650369588198,
+      "contentHash": "6325b8b5827eff4685531334dd68f765",
       "sourceName": "contracts/SuperToken.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -897,8 +897,8 @@
       ]
     },
     "C:\\Users\\ACER\\Desktop\\Project\\SimpleWeb3\\nus-money\\contracts\\NUSBank.sol": {
-      "lastModificationDate": 1649590333304,
-      "contentHash": "1dd12483b4d6ffbd4c4c5a42687d349d",
+      "lastModificationDate": 1649590783334,
+      "contentHash": "fe767cc98c4a5da287cf1e3fba948387",
       "sourceName": "contracts/NUSBank.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -967,6 +967,49 @@
       ],
       "artifacts": [
         "SafeMath"
+      ]
+    },
+    "C:\\Users\\ACER\\Desktop\\Project\\SimpleWeb3\\nus-money\\contracts\\SproutIndexToken.sol": {
+      "lastModificationDate": 1650371995049,
+      "contentHash": "4dedc89cff22fb2582c58d9b863b27a2",
+      "sourceName": "contracts/SproutIndexToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Snapshot.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20FlashMint.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "SproutIndexToken"
       ]
     }
   }
