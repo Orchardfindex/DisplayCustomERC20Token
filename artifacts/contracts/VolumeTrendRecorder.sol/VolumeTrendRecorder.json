@@ -1,0 +1,81 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "VolumeTrendRecorder",
+  "sourceName": "contracts/VolumeTrendRecorder.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "_emaInit",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "shortEMA",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "longEMA",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "lastBlockVolume",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "skipBlock",
+          "type": "uint256"
+        }
+      ],
+      "name": "UpdateEMA",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getVolumeTrendData",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "_shortEMA",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_longEMA",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_currentBlockVolume",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_lastTradeBlock",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101b33803806101b38339818101604052602081101561003357600080fd5b5051600080546001600160801b0319166001600160801b0380841691821716600160801b919091021790556100674361008a565b600180546001600160801b03928316600160801b029216919091179055506100df565b60006001600160801b038211156100db576040805162461bcd60e51b815260206004820152601060248201526f0deeccae4ccd8deee40ead2dce86264760831b604482015290519081900360640190fd5b5090565b60c6806100ed6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80630d94d50b14602d575b600080fd5b60336067565b604080516001600160801b039586168152938516602085015291841683830152909216606082015290519081900360800190f35b6000546001546001600160801b0380831693600160801b9384900482169383831693049091169056fea26469706673582212204d481f7e64e9f466d5433f7c493c6b662fb67fd183d3f27af67c8b23cec291ee64736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80630d94d50b14602d575b600080fd5b60336067565b604080516001600160801b039586168152938516602085015291841683830152909216606082015290519081900360800190f35b6000546001546001600160801b0380831693600160801b9384900482169383831693049091169056fea26469706673582212204d481f7e64e9f466d5433f7c493c6b662fb67fd183d3f27af67c8b23cec291ee64736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

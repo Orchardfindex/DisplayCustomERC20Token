@@ -9,7 +9,15 @@ const POLYGONSCANSCAN_API = process.env.POLYGONSCAN_API;
 const ALCHEMY_HTTP_MUMBAI = process.env.ALCHEMY_HTTP_MUMBAI;
 
 module.exports = {
-  solidity: "0.8.4",
+  solidity: {
+    version: "0.6.12",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
+    },
+  },
   networks: {
     ropsten: {
       url: `${ALCHEMY_API}`,
