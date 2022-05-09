@@ -10,6 +10,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20FlashMint.sol";
 
 // ropsten token address: 0x7186721d6C40ddefa4C8E151964b02a4D24E3131
+// fuji token address: 0xCb76B1948F65132F2e52eD681FD26935c9E206F2
 
 contract NUSMoneyToken is
     ERC20,

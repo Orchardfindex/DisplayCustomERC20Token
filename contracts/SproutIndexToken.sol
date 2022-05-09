@@ -11,6 +11,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20FlashMint.sol";
 
 // ropsten token address: 0x0D0e65B78599Fac00e317F3154ebc5c9103E67c0
 // mumbai address: 0xA1cedceA6EF620D6dc38c318041159CEfdF214De
+// fuji address: 0x57BBDeeBeF0949a669E6BEdBa63b2EDd2fb9D6f7
 
 contract SproutIndexToken is
     ERC20,
