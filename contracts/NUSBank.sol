@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 // 2nd deploy: 0x4238bE617FB3055B4c40D9EF878d19c160968441
 // 3rd deploy: 0xB61271d05D13A29e6379E18D533f6c1B110d46Db
 
+// Avax testnet address: 0x2139dbd3d1ECFEC96F11a9b3951900a63062d283
+
 contract NUSBank {
     address owner;
     bytes32[] public whitelistedSymbols;
